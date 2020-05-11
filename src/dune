@@ -1,0 +1,6 @@
+(library
+ (name mirage_pci_unix)
+ (public_name mirage-pci-unix)
+ (libraries mirage mirage-pci cstruct lwt fmt unix)
+ (wrapped false)
+ (foreign_stubs (language c) (names libixy-vfio stubs)))
